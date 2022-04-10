@@ -6,43 +6,56 @@
     <title>Mounir BESSOUFI</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css"  ></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background: radial-gradient(circle, rgba(255,255,255,1) 55%, rgba(101,101,101,0.6334908963585435) 90%);
+      }      
+    </style>
   </head>
-  <body>
-<div class="md:mx-auto lg:w-[900px] md:w-9/12 ">
-    <header class="text-center flex flex-col items-center md:flex-row ">
+<body class="font-body md:mx-auto lg:w-[1140px] md:w-9/12 ">
+<div >
+    <header class=" text-center  flex flex-col items-center gap-10 md:flex-row ">
       <div class="m-6">
-        <a href='./index.html'><img   class=""  width="34px" height="34px" src="./media/logo.png"></a>
+        <a href='./index.html'><img   class=""  width="64px" height="64px" src="./media/logo.png"></a>
       </div>
-
-  
-      <nav class="w-full" >
+      <nav class="w-full">
         <button id="toggle-nav-bar" class="md:hidden">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <ul  id="nav-bar" class="md:flex hidden my-4 flex-col  gap-4 bg-rose-100 w-full md:flex-row md:bg-white">
-          <li class="p-4 "> <a href="./index.html">Home</a> </li>
-          <li class="p-4 border-b-2 border-rose-400"> <a href="./articles.html">Articles</a> </li>
-          <li class="p-4">   <a href="./projects.html">Projects</a> </li>
-          
+        <ul  id="nav-bar" class="md:flex hidden mx-4 my-4 flex-col font-semibold justify-end gap-4 w-full md:flex-row md:bg-white">
+          <li class="p-4"><a href="./index.html">Home</a> </li>
+          <li class="p-4  border-b-2 border-rose-400"><a href="./articles.html">Articles</a> </li>
+          <li class="p-4"><a href="./projects.html">Projects</a> </li>      
+          <li class="p-4"> <a href="./about.html">About</a> </li>
         </ul>
       </nav>
-      <div class="border-2 rounded-lg p-4 border-rose-500 bg-rose-400 text-white mt-20 md:mt-0 md:p-0 " ><a href="./contactme.html">Get in Touch</a> </div>
+      <!-- <div class="hover:animate-bounce border-2 rounded-lg p-4 border-rose-500 bg-rose-400 text-white mt-20 md:mt-0 md:p-0 " ><a href="./contactme.html">Get in Touch</a> </div> -->
     </header>
-    <main class="p-10">    
-        
-    </main>
+    <main class="p-10">
+        <p class="text-center"> &nbsp;•&nbsp;No listing yet&nbsp;•&nbsp;</p>
+    </main>  
 </div>
 
-
-
-<script>
-  const navBar = document.getElementById('nav-bar');
-  document.getElementById('toggle-nav-bar').addEventListener('click', (e) => {
-    navBar.classList.toggle('hidden');
-  })
-</script>
- 
-
+  <footer class="text-center">
+    &nbsp;•&nbsp;Hand crafted by © Bessoufi Mounir&nbsp;•&nbsp;
+  </footer>
+  <script>
+    const navBar = document.getElementById('nav-bar');
+    document.getElementById('toggle-nav-bar').addEventListener('click', (e) => {
+      navBar.classList.toggle('hidden');
+    })
+  </script>
 
   </body>
 </html>
+
+ 
+
+ 
+
+
+    

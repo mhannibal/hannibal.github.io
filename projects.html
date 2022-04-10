@@ -10,35 +10,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background: radial-gradient(circle, rgba(255,255,255,1) 55%, rgba(101,101,101,0.6334908963585435) 90%);
+      }      
+    </style>
   </head>
-  <body class="font-body">
-<div class="md:mx-auto lg:w-[900px] md:w-9/12 ">
-    <header class=" text-center flex flex-col items-center md:flex-row ">
+<body class="font-body md:mx-auto lg:w-[1140px] md:w-9/12 ">
+<div >
+    <header class=" text-center  flex flex-col items-center gap-10 md:flex-row ">
       <div class="m-6">
-        <a href='./index.html'><img   class=""  width="34px" height="34px" src="./media/logo.png"></a>
+        <a href='./index.html'><img   class=""  width="64px" height="64px" src="./media/logo.png"></a>
       </div>
       <nav class="w-full">
         <button id="toggle-nav-bar" class="md:hidden">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <ul  id="nav-bar" class="md:flex hidden my-4 flex-col  gap-4 w-full md:flex-row md:bg-white">
-          <li class="p-4"> <a href="./index.html">Home</a> </li>
-          <li class="p-4"> <a href="./articles.html">Articles</a> </li>
-          <li class="p-4 border-b-2 border-rose-400">   <a href="./projects.html">Projects</a> </li>      
+        <ul  id="nav-bar" class="md:flex hidden mx-4 my-4 flex-col font-semibold justify-end gap-4 w-full md:flex-row md:bg-white">
+          <li class="p-4"><a href="./index.html">Home</a> </li>
+          <li class="p-4"><a href="./articles.html">Articles</a> </li>
+          <li class="p-4 border-b-2 border-rose-400"><a href="./projects.html">Projects</a> </li>      
+          <li class="p-4"> <a href="./about.html">About</a> </li>
         </ul>
       </nav>
-      <div class="border-2 rounded-lg p-4 border-rose-500 bg-rose-400 text-white mt-20 md:mt-0 md:p-0 " ><a href="./contactme.html">Get in Touch</a> </div>
+      <!-- <div class="hover:animate-bounce border-2 rounded-lg p-4 border-rose-500 bg-rose-400 text-white mt-20 md:mt-0 md:p-0 " ><a href="./contactme.html">Get in Touch</a> </div> -->
     </header>
-
     <main class="p-10">
-      <div class="flex flex-col md:flex-row gap-14 py-20 border-b border-gray-100 mb-20">
+      <div class="flex flex-col md:flex-row gap-14 py-20 mb-20">
+        <div>
+          <img class="w-[480px]" src="./media/portfolio.png" alt="">
+        </div>
+        <div>
+          <h1 class="font-semibold text-2xl mb-5 align-middle flex">This Website<span class="bg-secondary-100 text-white-100 text-sm ml-5 p-2 rounded-lg">2020</span></h1>
+          <p class="text-gray-100">A single page application that helps the employee to calculate and visualise his payslip</p>
+          <div class="my-8"> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">tailwind</span>
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">gulp</span>
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">github-pages</span> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">html</span></div>
+          <div class="flex gap-2 mt-8">            
+            <a href="https://github.com/mhannibal/mhannibal.github.io" class="text-black-100 p-2 rounded-lg border ">Show source</a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="flex flex-col md:flex-row gap-14 py-20 mb-20">
         <div>
           <img class="w-[480px]" src="./media/paietoolbox2.png" alt="">
         </div>
         <div>
           <h1 class="font-semibold text-2xl mb-5 align-middle flex">PaieToolBox<span class="bg-secondary-100 text-white-100 text-sm ml-5 p-2 rounded-lg">2020</span></h1>
-          <p class="text-gray-100">A small ap p that helps you calculate and visualise your work sqdqkldjqsdj</p>
-          <div> <span>react</span> <span>redux</span> <span>bootstrap</span> <span>webpack</span></div>
+          <p class="text-gray-100">A single page application that helps the employee to calculate and visualise his payslip</p>
+          <div class="my-8"> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">react</span>
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">redux</span>
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">bootstrap</span> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">webpack</span></div>
           <div class="flex gap-2 mt-8">
             <a href="./paietoolbox/" class="bg-gray-100 p-2 rounded-lg text-white-100">Preview</a>
             <a href="https://github.com/mhannibal/paietoolbox" class="text-black-100 p-2 rounded-lg border ">Show source</a>
@@ -46,14 +74,18 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row gap-14 py-20 border-b border-gray-100 mb-20">
+      <div class="flex flex-col md:flex-row gap-14 py-20 mb-20">
         <div>
           <img class="w-[480px]" src="./media/guessNum.png" alt="">
         </div>
         <div>
-          <h1 class="font-semibold text-2xl mb-5 align-middle flex">Guess Da Number<span class="bg-secondary-100 text-white-100 text-sm ml-5 p-2 rounded-lg">2022</span></h1>
-          <p class="text-gray-100">A small ap p that helps you calculate and visualise your work sqdqkldjqsdj</p>
-          <div> <span>react</span> <span>hooks</span> <span>create-react-app</span></div>
+          <h1 class="font-semibold text-2xl mb-5 align-middle flex">Guess Da Number<span class="bg-secondary-100 text-white-100 text-xs ml-5 p-2 rounded-lg">2022</span></h1>
+          <p class="text-gray-100">Guessing game, a small game that let you choose a number and select the card where it shows , the Game will guess it</p>
+          <div class="my-8"> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">react</span> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">hooks</span> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">create-react-app</span>
+          </div>
           <div class="flex gap-2 mt-8">
             <button class="bg-gray-100 p-2 rounded-lg text-white-100">Preview</button>
             <button class="text-black-100 p-2 rounded-lg border ">Visite Site</button>
@@ -61,34 +93,63 @@
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row gap-14 py-20 border-b border-gray-100 mb-20">
+      <div class="flex flex-col md:flex-row gap-14 py-20 mb-20">
         <div>
           <img class="w-[480px]" src="./media/SAPlayer2.png" alt="">
         </div>
         <div>
-          <h1 class="font-semibold text-2xl mb-5 align-middle flex">SAP audio player<span class="bg-secondary-100 text-white-100 text-sm ml-5 p-2 rounded-lg">2021</span></h1>
-          <p class="text-gray-100">A small ap p that helps you calculate and visualise your work sqdqkldjqsdj</p>
-          <div> <span>vanilla</span> <span>js</span> <span></span></div>
+          <h1 class="font-semibold text-2xl mb-5 align-middle flex">SAP audio player<span class="bg-secondary-100 text-white-100 text-xs ml-5 p-2 rounded-lg">2021</span></h1>
+          <p class="text-gray-100">its an audio player written in vanilla js and the html5 audio api, allow listening to mp3s,  web radio and m3u8, xspf ,jspf ,xml playlists</p>
+          <div class="my-8"> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">vanilla</span> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">js</span> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">audio</span>
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">m3u8</span>
+          </div>
           <div class="flex gap-2 mt-8">
             <button class="bg-gray-100 p-2 rounded-lg text-white-100">Preview</button>
-            <button class="text-black-100 p-2 rounded-lg border ">Visite Site</button>
           </div>
         </div>
       </div>
 
+      <div class="flex flex-col md:flex-row gap-14 py-20 mb-20">
+        <div>
+          <img class="w-[480px]" src="./media/revupera.png" alt="">
+        </div>
+        <div>
+          <h1 class="font-semibold text-2xl mb-5 align-middle flex">revupera<span class="bg-secondary-100 text-white-100 text-xs ml-5 p-2 rounded-lg">2018</span></h1>
+          <p class="text-gray-100">its a virtual classroom where the student can watch video courses and do quiz homeworks, track his progress.</p>
+          <div class="my-8"> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">Django</span> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">React</span> 
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">GraphQL</span>
+            <span class="bg-secondary-100 rounded-md p-1 text-sm text-white-100">Django-Channels</span>
+          </div>
+          
+        </div>
+      </div>
+
     </main>
+ 
+   
 </div>
 
-
-
-<script>
-  const navBar = document.getElementById('nav-bar');
-  document.getElementById('toggle-nav-bar').addEventListener('click', (e) => {
-    navBar.classList.toggle('hidden');
-  })
-</script>
- 
-
+  <footer class="text-center">
+    &nbsp;•&nbsp;Hand crafted by © Bessoufi Mounir&nbsp;•&nbsp;
+  </footer>
+  <script>
+    const navBar = document.getElementById('nav-bar');
+    document.getElementById('toggle-nav-bar').addEventListener('click', (e) => {
+      navBar.classList.toggle('hidden');
+    })
+  </script>
 
   </body>
 </html>
+
+ 
+
+ 
+
+
+    
