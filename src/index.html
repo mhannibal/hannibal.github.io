@@ -10,50 +10,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background: radial-gradient(circle, rgba(255,255,255,1) 55%, rgba(101,101,101,0.6334908963585435) 90%);
+      }      
+    </style>
   </head>
-  <body class="font-body">
-<div class="md:mx-auto lg:w-[900px] md:w-9/12 ">
-    <header class=" text-center flex flex-col items-center md:flex-row ">
+<body class="font-body md:mx-auto lg:w-[1140px] md:w-9/12 ">
+<div >
+    <header class=" text-center  flex flex-col items-center gap-10 md:flex-row ">
       <div class="m-6">
-        <a href='./index.html'><img   class=""  width="34px" height="34px" src="./media/logo.png"></a>
+        <a href='./index.html'><img   class=""  width="64px" height="64px" src="./media/logo.png"></a>
       </div>
       <nav class="w-full">
         <button id="toggle-nav-bar" class="md:hidden">
           <i class="fa-solid fa-bars"></i>
         </button>
-        <ul  id="nav-bar" class="md:flex hidden my-4 flex-col  gap-4 w-full md:flex-row md:bg-white">
-          <li class="p-4  border-b-2 border-rose-400"> <a href="./index.html">Home</a> </li>
+        <ul  id="nav-bar" class="md:flex hidden mx-4 my-4 flex-col font-semibold justify-end gap-4 w-full md:flex-row md:bg-white">
+          <li class="p-4 border-b-2 border-rose-400 "> <a href="./index.html">Home</a> </li>
           <li class="p-4"> <a href="./articles.html">Articles</a> </li>
           <li class="p-4">   <a href="./projects.html">Projects</a> </li>      
+          <li class="p-4  "> <a href="./about.html">About</a> </li>
         </ul>
       </nav>
-      <div class="border-2 rounded-lg p-4 border-rose-500 bg-rose-400 text-white mt-20 md:mt-0 md:p-0 " ><a href="./contactme.html">Get in Touch</a> </div>
+      <!-- <div class="hover:animate-bounce border-2 rounded-lg p-4 border-rose-500 bg-rose-400 text-white mt-20 md:mt-0 md:p-0 " ><a href="./contactme.html">Get in Touch</a> </div> -->
     </header>
 
-    <main class="p-10">
-      <header>
-        <h1 class="mb-8 text-center text-2xl font-semibold"> Mounir BESSOUFI is my name and i'm a Software engineer.<h1>
-      </header>
-      <article class="">
-        <p>Full stack developer, I work mainly with  Django/Flask ,JS, React, Redux.</p>
-        <p>Started coding too young, My first language was  Object Pascal Delphi</p>
-        <p>I hold a masters degree from my home town university in Networks and Systems Architecture</p>
-        <p>languages that i iwork with perfectly C,C++ QT , java, C# using wpf, and Delphi </p>
-        <p>Currently a Phd student at Biskra university Algeria , working on 5g network slicing using AI </p>
-      </article>      
+    <main class="p-10">        
+      <section class="my-20 ">
+        
+        <div class="mt-20 flex items-center justify-evenly flex-col md:flex-row gap-8 ">         
+            <img class="w-[247px]" src="https://avatars.githubusercontent.com/u/3372727?v=4" alt="" />
+            <!-- <img class="tossing relative top-[-90px]" src="./media/top.png" alt="" />
+            <img class="relative top-[-130px]  left-[-34px]" src="./media/bas.png" alt="" /> -->
+            <!-- <div class="tossing  top-[-235px] left-[38px]"><img class=" " src="./media/top.png" alt="" /></div> -->
+            <div class="flex flex-col">
+              <div>
+                <h1 class="text-center text-4xl font-semibold">Hey! I'm <span class="text-secondary-100">Mounir BESSOUFI</span>.</h1>
+                <h1 class="mb-8 text-center text-2xl font-semibold">Software engineer from Algeria</h1>
+              </div>
+              <div class="flex gap-4 justify-center text-2xl">
+                  <span class="cursor-pointer hover:text-secondary-100 hover:animate-bounce">
+                    <a href="https://github.com/mhannibal/"><i class="fa-brands fa-github"></i></a>
+                  </span>
+                  <span class="cursor-pointer hover:text-secondary-100 hover:animate-bounce">
+                    <a href="https://codepen.io/hannibalov/"><i class="fa-brands fa-codepen"></i></a>
+                  </span>
+                  <span class="cursor-pointer hover:text-secondary-100 hover:animate-bounce">
+                    <a href="https://dev.to/mhannibal"><i class="fa-brands fa-dev"></i></a>
+                  </span>
+                  <span class="cursor-pointer hover:text-secondary-100 hover:animate-bounce">
+                    <a href="https://www.linkedin.com/in/mounir-bessoufi-6a48579/"><i class="fa-brands fa-linkedin"></i></a>
+                  </span>
+                  <span class="cursor-pointer hover:text-secondary-100 hover:animate-bounce">
+                    <a href="https://twitter.com/mbessoufi"><i class="fa-brands fa-twitter"></i></a>
+                    <span>                    
+              </div>
+            </div>
+
+        </div>
+
+      </section>   
+      <section class="my-40 flex flex-col items-center">
+        <h1 class="text-center text-3xl font-semibold mb-10">Get in Touch</h1>
+        <div class="border-2 rounded-md p-4 border-secondary-200 flex flex-col items-center w-2/4">
+          <h1 class="text-center text-xl font-semibold mb-5">Want to work together or have any questions?</h1>
+          <a href="mailto:bessoufi.mounir@gmail.com" class="bg-secondary-100 text-white-100 w-50 rounded-lg font-bold py-3 px-8 text-xl rounded text-center">Say Hello 👋</a>          
+        </div>
+      </section>
     </main>
 </div>
 
-
-
-<script>
-  const navBar = document.getElementById('nav-bar');
-  document.getElementById('toggle-nav-bar').addEventListener('click', (e) => {
-    navBar.classList.toggle('hidden');
-  })
-</script>
- 
-
+  <footer class="text-center">
+    &nbsp;•&nbsp;Hand crafted by © Bessoufi Mounir&nbsp;•&nbsp;
+  </footer>
+  <script>
+    const navBar = document.getElementById('nav-bar');
+    document.getElementById('toggle-nav-bar').addEventListener('click', (e) => {
+      navBar.classList.toggle('hidden');
+    })
+  </script>
 
   </body>
 </html>
